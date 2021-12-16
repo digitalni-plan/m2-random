@@ -15,6 +15,11 @@ WHERE (
 	OR path LIKE 'web/secure/%_url'
 ) and scope_id = 0;
 
+-- Delete payment configurations
+DELETE FROM core_config_data
+WHERE path LIKE '%payway%shop_id'
+ OR path LIKE '%payway%secret_key';
+
 -- Delete customer tables
 DELETE FROM customer_entity;
 DELETE FROM customer_grid_flat;
