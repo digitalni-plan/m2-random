@@ -7,6 +7,14 @@ WHERE (
 	OR path LIKE 'web/secure/%_url'
 ) and scope_id > 0;
 
+-- Update web address
+UPDATE core_config_data
+SET value = 'https://testinstance.test/'
+WHERE (
+	path LIKE 'web/unsecure/%_url'
+	OR path LIKE 'web/secure/%_url'
+) and scope_id = 0;
+
 -- Delete customer tables
 DELETE FROM customer_entity;
 DELETE FROM customer_grid_flat;
