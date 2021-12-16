@@ -1,17 +1,24 @@
-# Sanitize existing db from production
+-- Sanitize existing db from production
 
-# Delete customer tables
+-- All is served from same url
+DELETE FROM core_config_data
+WHERE (
+	path LIKE 'web/unsecure/%_url'
+	OR path LIKE 'web/secure/%_url'
+) and scope_id > 0;
+
+-- Delete customer tables
 DELETE FROM customer_entity;
 DELETE FROM customer_grid_flat;
 
-# Delete sales order tables
+-- Delete sales order tables
 DELETE FROM sales_order;
 DELETE FROM sales_order_grid;
 
-# Delete invoice tables
+-- Delete invoice tables
 DELETE FROM sales_invoice;
 DELETE FROM sales_invoice_grid;
 
-# Delete credit memo tables
+-- Delete credit memo tables
 DELETE FROM sales_creditmemo;
 DELETE FROM sales_creditmemo_grid;
