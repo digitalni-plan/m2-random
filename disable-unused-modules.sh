@@ -47,4 +47,14 @@ Magento_Elasticsearch6 \
 Magento_Ups \
 Magento_SampleData \
 Magento_Usps \
-Magento_GoogleShoppingAds
+Magento_GoogleShoppingAds \
+Magento_LoginAsCustomer \
+Magento_LoginAsCustomerAdminUi \
+Magento_LoginAsCustomerApi \
+Magento_LoginAsCustomerAssistance \
+Magento_LoginAsCustomerFrontendUi \
+Magento_LoginAsCustomerGraphQl \
+Magento_LoginAsCustomerLog \
+Magento_LoginAsCustomerPageCache \
+Magento_LoginAsCustomerQuote \
+Magento_LoginAsCustomerSales
