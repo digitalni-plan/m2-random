@@ -32,4 +32,19 @@ Magento_CmsPageBuilderAnalytics \
 Magento_PageBuilder \
 Magento_PageBuilderAnalytics \
 Magento_PageBuilderAdminAnalytics \
-Magento_AwsS3PageBuilder
+Magento_AwsS3PageBuilder \
+Dotdigitalgroup_Email \
+Dotdigitalgroup_Chat \
+Dotdigitalgroup_ChatGraphQl \
+Dotdigitalgroup_EmailGraphQl \
+Dotdigitalgroup_Sms \
+Magento_Dhl \
+Magento_Fedex \
+Magento_GoogleAdwords \
+Magento_Marketplace \
+Magento_Rss \
+Magento_Elasticsearch7 \
+Magento_Elasticsearch6 \
+Magento_Ups \
+Magento_SampleData \
+Magento_Usps
