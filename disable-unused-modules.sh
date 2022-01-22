@@ -46,4 +46,5 @@ Magento_Elasticsearch7 \
 Magento_Elasticsearch6 \
 Magento_Ups \
 Magento_SampleData \
-Magento_Usps
+Magento_Usps \
+Magento_GoogleShoppingAds
